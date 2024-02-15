@@ -16,7 +16,7 @@ let figure2 = [];
 let dragAmount = 0;
 
 function preload() {
-  song = loadSound("main/04 round (1) (1).mp3");
+  song = loadSound("https://wheattoast11.github.io/04_round_(1)_(1).mp3");
 }
 
 function setup() {
