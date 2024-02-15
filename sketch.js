@@ -16,7 +16,7 @@ let figure2 = [];
 let dragAmount = 0;
 
 function preload() {
-  song = loadSound("docs/assets/04 round (1) (1).mp3");
+  song = loadSound('docs/assets/04 round (1) (1).mp3');
 }
 
 function setup() {
