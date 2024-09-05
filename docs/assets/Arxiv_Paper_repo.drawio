@@ -1,9 +1,108 @@
 <mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36" version="24.7.12">
   <diagram name="Page-1" id="edf60f1a-56cd-e834-aa8a-f176f3a09ee4">
-    <mxGraphModel dx="1153" dy="591" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1100" pageHeight="850" background="none" math="0" shadow="0">
+    <mxGraphModel dx="1153" dy="591" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1100" pageHeight="850" background="none" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
+        <mxCell id="pKG7zbtlNngQ08HzmBPn-1" value="&lt;h1 style=&quot;margin-top: 0px;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;Arxiv Paper Repo Scraping&lt;/span&gt;&lt;br&gt;&lt;/h1&gt;" style="text;html=1;whiteSpace=wrap;overflow=hidden;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="460" y="24" width="180" height="76" as="geometry" />
+        </mxCell>
+        <mxCell id="pKG7zbtlNngQ08HzmBPn-2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="pKG7zbtlNngQ08HzmBPn-1" target="pKG7zbtlNngQ08HzmBPn-1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="pKG7zbtlNngQ08HzmBPn-82" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="pKG7zbtlNngQ08HzmBPn-7" target="pKG7zbtlNngQ08HzmBPn-8">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="pKG7zbtlNngQ08HzmBPn-7" value="User inputs {user_parameters} into input boxes" style="shape=process;whiteSpace=wrap;html=1;backgroundOutline=1;" vertex="1" parent="1">
+          <mxGeometry x="388" y="118" width="337" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="pKG7zbtlNngQ08HzmBPn-8" value="{user_parameters}" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="219.5" y="222" width="674" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="pKG7zbtlNngQ08HzmBPn-9" value="[archiveLandingPage]:&amp;nbsp;&lt;a style=&quot;text-align: center; text-wrap: nowrap;&quot; href=&quot;https://arxiv.org/list/cs.AI/recent?skip=0&amp;amp;show=2000&quot;&gt;https://arxiv.org/list/cs.AI/recent?skip=0&amp;amp;show=2000&lt;/a&gt;&amp;nbsp;(Default option use can change if they would like to)" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" vertex="1" parent="pKG7zbtlNngQ08HzmBPn-8">
+          <mxGeometry y="30" width="674" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="pKG7zbtlNngQ08HzmBPn-10" value="[userInputNumber]: # of papers to search over on [archiveLandingPage]" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" vertex="1" parent="pKG7zbtlNngQ08HzmBPn-8">
+          <mxGeometry y="60" width="674" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="pKG7zbtlNngQ08HzmBPn-11" value="[keywordSearch]: user inputted keywords and/or query for types of papers to search over" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" vertex="1" parent="pKG7zbtlNngQ08HzmBPn-8">
+          <mxGeometry y="90" width="674" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="pKG7zbtlNngQ08HzmBPn-80" value="" style="group" vertex="1" connectable="0" parent="1">
+          <mxGeometry x="86" y="430" width="941" height="750" as="geometry" />
+        </mxCell>
+        <mxCell id="pKG7zbtlNngQ08HzmBPn-31" value="Building Scrubbing Dictionary" style="swimlane;whiteSpace=wrap;html=1;" vertex="1" parent="pKG7zbtlNngQ08HzmBPn-80">
+          <mxGeometry width="941" height="750" as="geometry" />
+        </mxCell>
+        <mxCell id="pKG7zbtlNngQ08HzmBPn-86" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="pKG7zbtlNngQ08HzmBPn-31" source="pKG7zbtlNngQ08HzmBPn-56" target="pKG7zbtlNngQ08HzmBPn-85">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="pKG7zbtlNngQ08HzmBPn-36" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="pKG7zbtlNngQ08HzmBPn-31" source="pKG7zbtlNngQ08HzmBPn-32" target="pKG7zbtlNngQ08HzmBPn-35">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="pKG7zbtlNngQ08HzmBPn-38" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="pKG7zbtlNngQ08HzmBPn-31" source="pKG7zbtlNngQ08HzmBPn-32" target="pKG7zbtlNngQ08HzmBPn-37">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="pKG7zbtlNngQ08HzmBPn-32" value="Review [archiveLandingPage] for [userInputNumber] worth of papers matching [keywordSearch] semantically" style="whiteSpace=wrap;html=1;" vertex="1" parent="pKG7zbtlNngQ08HzmBPn-31">
+          <mxGeometry x="106.38" y="39" width="324.75" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="pKG7zbtlNngQ08HzmBPn-35" value="Create 2 SQL Tables in PGLite for storage:&lt;br&gt;&lt;br&gt;papers = [paperID, paper_name, category, publication date, pdf link, html link]&lt;br&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;learnings = [paperID, paper_name, one line abstract, findings, applicable learnings]&lt;/div&gt;" style="whiteSpace=wrap;html=1;" vertex="1" parent="pKG7zbtlNngQ08HzmBPn-31">
+          <mxGeometry x="1.75" y="175" width="307.76" height="178" as="geometry" />
+        </mxCell>
+        <mxCell id="pKG7zbtlNngQ08HzmBPn-37" value="Click on [html] link for paper n (Ex:&amp;nbsp;https://arxiv.org/html/2409.02877v1)" style="whiteSpace=wrap;html=1;" vertex="1" parent="pKG7zbtlNngQ08HzmBPn-31">
+          <mxGeometry x="332" y="175" width="253" height="59" as="geometry" />
+        </mxCell>
+        <mxCell id="pKG7zbtlNngQ08HzmBPn-57" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="pKG7zbtlNngQ08HzmBPn-31" source="pKG7zbtlNngQ08HzmBPn-49" target="pKG7zbtlNngQ08HzmBPn-56">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="pKG7zbtlNngQ08HzmBPn-49" value="Store to data frame and set n=n+1" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="pKG7zbtlNngQ08HzmBPn-31">
+          <mxGeometry x="759.5" y="277" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="pKG7zbtlNngQ08HzmBPn-64" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;" edge="1" parent="pKG7zbtlNngQ08HzmBPn-31" source="pKG7zbtlNngQ08HzmBPn-53" target="pKG7zbtlNngQ08HzmBPn-37">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="pKG7zbtlNngQ08HzmBPn-53" value="Return to home page for [archiveLandingPage] by going back a page and navigate to new n=n+1 (increment to next paper)" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="pKG7zbtlNngQ08HzmBPn-31">
+          <mxGeometry x="332" y="433.25" width="254" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="pKG7zbtlNngQ08HzmBPn-58" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="pKG7zbtlNngQ08HzmBPn-31" source="pKG7zbtlNngQ08HzmBPn-56" target="pKG7zbtlNngQ08HzmBPn-53">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="pKG7zbtlNngQ08HzmBPn-61" value="&lt;b&gt;&lt;font color=&quot;#ff00ff&quot; style=&quot;font-size: 20px;&quot;&gt;NO&lt;/font&gt;&lt;/b&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="pKG7zbtlNngQ08HzmBPn-58">
+          <mxGeometry x="-0.0736" y="-1" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="pKG7zbtlNngQ08HzmBPn-59" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="pKG7zbtlNngQ08HzmBPn-31" source="pKG7zbtlNngQ08HzmBPn-56" target="pKG7zbtlNngQ08HzmBPn-35">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="800" y="601" />
+              <mxPoint x="156" y="601" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="pKG7zbtlNngQ08HzmBPn-84" value="&lt;b&gt;&lt;font color=&quot;#66cc00&quot; style=&quot;font-size: 20px;&quot;&gt;YES&lt;/font&gt;&lt;/b&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="pKG7zbtlNngQ08HzmBPn-59">
+          <mxGeometry x="-0.9405" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="pKG7zbtlNngQ08HzmBPn-56" value="Are all papers&amp;nbsp;&lt;div&gt;reviewed?&amp;nbsp;&lt;/div&gt;" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="pKG7zbtlNngQ08HzmBPn-31">
+          <mxGeometry x="727.75" y="404" width="143.5" height="118.5" as="geometry" />
+        </mxCell>
+        <mxCell id="pKG7zbtlNngQ08HzmBPn-85" value="Emit status message and summary of scrubbing results, as well as key insights from the process" style="whiteSpace=wrap;html=1;" vertex="1" parent="pKG7zbtlNngQ08HzmBPn-31">
+          <mxGeometry x="664.75" y="677" width="269.5" height="58" as="geometry" />
+        </mxCell>
+        <mxCell id="pKG7zbtlNngQ08HzmBPn-44" value="Analyze and summarize the paper capturing structural data for [paperID, paper_name, category of paper, publication_date, pdf link, html link, one line abstract, findings, applicable learnings]" style="whiteSpace=wrap;html=1;" vertex="1" parent="pKG7zbtlNngQ08HzmBPn-80">
+          <mxGeometry x="665" y="151" width="269" height="107" as="geometry" />
+        </mxCell>
+        <mxCell id="pKG7zbtlNngQ08HzmBPn-45" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="pKG7zbtlNngQ08HzmBPn-80" source="pKG7zbtlNngQ08HzmBPn-37" target="pKG7zbtlNngQ08HzmBPn-44">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="pKG7zbtlNngQ08HzmBPn-50" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="pKG7zbtlNngQ08HzmBPn-80" source="pKG7zbtlNngQ08HzmBPn-44" target="pKG7zbtlNngQ08HzmBPn-49">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="pKG7zbtlNngQ08HzmBPn-83" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="pKG7zbtlNngQ08HzmBPn-8" target="pKG7zbtlNngQ08HzmBPn-31">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
